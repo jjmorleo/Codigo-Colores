@@ -40,7 +40,6 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/main_registrate"
-        android:hint=""
         android:layout_marginBottom="15dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -52,8 +51,22 @@
         app:icon="@drawable/ic_baseline_person_add_alt_1_24"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:strokeColor="@color/color_surface"
-        app:strokeWidth="2dp"
-        />
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_iniciar_seccion"
+        android:layout_marginBottom="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main_registrate"
+        app:layout_constraintEnd_toStartOf="@+id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10"
+        android:text="¡Iniciate!"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/color_surface"
+        app:strokeWidth="2dp"/>
 
 
 
