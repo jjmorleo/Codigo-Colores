@@ -10,13 +10,13 @@
     <color name="color_secundary_variant">#003c8f</color>
 
     <color name="color_background">#e0e0e0</color>
-    <color name="color_surface">#6a1b9a</color>
+    <color name="color_surface">#DA70706E</color>
     <color name="color_error">#d50000</color>
 
     <color name="color_on_primary">@color/black</color>
     <color name="color_on_secundary">@color/white</color>
     <color name="color_on_background">@color/black</color>
-    <color name="color_on_surface">@color/white</color>
+    <color name="color_on_surface">#877F7F</color>
     <color name="color_on_error">@color/white</color>
 
 

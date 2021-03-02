@@ -61,12 +61,58 @@
         app:layout_constraintBottom_toTopOf="@+id/main_registrate"
         app:layout_constraintEnd_toStartOf="@+id/main_Vguide90"
         app:layout_constraintStart_toEndOf="@id/main_Vguide10"
-        android:text="¡Iniciate!"
+        android:text="¡Iniciar Sección!"
         app:cornerRadius="15dp"
         app:icon="@drawable/ic_baseline_login_24"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:strokeColor="@color/color_surface"
         app:strokeWidth="2dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_introducir_contraseña"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main_iniciar_seccion"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10"
+        android:hint="Contraseña"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/color_secundary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secundary"
+        >
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_introducir_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="Nombre de usuario"
+        app:boxStrokeColor="@color/color_secundary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/color_secundary"
+        app:layout_constraintBottom_toTopOf="@+id/main_introducir_contraseña"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+       <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:inputType="textEmailAddress"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
