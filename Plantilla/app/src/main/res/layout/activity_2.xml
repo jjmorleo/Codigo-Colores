@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_Vguide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_Vguide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main2_Hguide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main2_iniciar_seccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main2_Hguide90"
+        app:layout_constraintEnd_toStartOf="@+id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10"
+        android:text="¡Iniciar Sección!"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/color_secondary"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main2_registrate"
+        android:layout_marginBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main2_iniciar_seccion"
+        app:layout_constraintEnd_toStartOf="@+id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10"
+        android:text="¡Registrate!"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_person_add_alt_1_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/color_secondary"
+        app:strokeWidth="2dp"/>
+
+    <CheckBox
+        android:id="@+id/main2_aceptar_politica"
+        android:layout_marginBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main2_registrate"
+        app:layout_constraintEnd_toStartOf="@id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@+id/main2_Vguide10"
+        android:text="He leído y acepto política de privacidad"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_til_repite_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main2_aceptar_politica"
+        app:layout_constraintEnd_toStartOf="@id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10"
+        android:hint="Repita contraseña"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/color_secondary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secondary"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_tie_repite_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/main2_til_repite_password"
+        app:layout_constraintEnd_toStartOf="@id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10"
+        android:hint="Contraseña"
+        app:startIconDrawable="@drawable/ic_baseline_password_24"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/color_secondary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:hintTextColor="@color/color_secondary"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main2_tie_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Usuario"
+        app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
+        app:boxStrokeColor="@color/color_secondary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/color_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/main2_til_password"
+        app:layout_constraintEnd_toStartOf="@id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main2_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Name"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:boxStrokeColor="@color/color_secondary"
+        app:boxStrokeWidth="2dp"
+        app:cornerRadius="15dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/color_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/main2_usuario"
+        app:layout_constraintEnd_toStartOf="@id/main2_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main2_Vguide10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
