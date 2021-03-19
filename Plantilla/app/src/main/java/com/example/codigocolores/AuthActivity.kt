@@ -7,13 +7,17 @@ import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
 import com.example.codigocolores.databinding.ActivityAuthBinding
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class AuthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAuthBinding
-    //private lateinit var auth: FirebaseAuth
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Base_MyTheme)
         super.onCreate(savedInstanceState)
+        auth = Firebase.auth
 
 
 
@@ -29,6 +33,8 @@ class AuthActivity : AppCompatActivity() {
                 binding.mainIntroducirPassword.error = "¡La contraseña no puede estar vacia!"
                 return@setOnClickListener
             }
+            val intent = Intent(this, RegistroActivity ::class.java)
+            startActivity(intent)
         }
         binding.mainTiePassword.addTextChangedListener {
             val size = it!!.length
@@ -51,7 +57,7 @@ class AuthActivity : AppCompatActivity() {
 
         }
         binding.mainRegistrate.setOnClickListener {
-            val intent = Intent (this, Activity2::class.java)
+            val intent = Intent (this, RegistroActivity::class.java)
             startActivity(intent,ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
         }
         binding.mainTiePassword.setOnFocusChangeListener { _, hasFocus ->
