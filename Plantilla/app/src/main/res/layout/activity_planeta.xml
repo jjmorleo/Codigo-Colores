@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlanetaActivity">
+    tools:context=".ui.Planeta.PlanetaActivity">
 
     <LinearLayout
         android:id="@+id/planeta_ll"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <fragment
-            android:name="com.example.codigocolores.PlanetaFragment"
+            android:name="com.example.codigocolores.ui.Planeta.PlanetaFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"

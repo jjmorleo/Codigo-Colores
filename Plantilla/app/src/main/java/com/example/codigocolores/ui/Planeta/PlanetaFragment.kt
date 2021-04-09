@@ -1,4 +1,4 @@
-package com.example.codigocolores
+package com.example.codigocolores.ui.Planeta
 
 import android.content.Context
 import android.os.Bundle

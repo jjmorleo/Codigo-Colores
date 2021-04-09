@@ -1,4 +1,4 @@
-package com.example.codigocolores
+package com.example.codigocolores.ui
 
 import android.app.ActivityOptions
 import android.content.Intent

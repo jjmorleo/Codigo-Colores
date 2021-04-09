@@ -1,4 +1,4 @@
-package com.example.codigocolores
+package com.example.codigocolores.ui.Planeta
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

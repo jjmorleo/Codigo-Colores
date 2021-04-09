@@ -1,11 +1,14 @@
-package com.example.codigocolores
+package com.example.codigocolores.ui
 
 import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
+import com.example.codigocolores.ColorActivity
+import com.example.codigocolores.R
 import com.example.codigocolores.databinding.ActivityAuthBinding
+import com.example.codigocolores.ui.A.AActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -33,7 +36,7 @@ class AuthActivity : AppCompatActivity() {
                 binding.mainIntroducirPassword.error = "¡La contraseña no puede estar vacia!"
                 return@setOnClickListener
             }
-            val intent = Intent(this, RegistroActivity ::class.java)
+            val intent = Intent(this, AActivity ::class.java)
             startActivity(intent)
         }
         binding.mainTiePassword.addTextChangedListener {

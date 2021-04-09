@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.codigocolores" >
+    package="com.example.codigocolores">
 
     <application
         android:allowBackup="true"
@@ -8,19 +8,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Base.MyTheme" >
-
-        <activity android:name=".PlanetaActivity" />
-        <activity android:name=".RegistroActivity" />
-        <activity
-            android:name=".AuthActivity"
-            android:theme="@style/Splash" >
+        android:theme="@style/Base.MyTheme">
+        <activity android:name=".ui.B.BActivity"></activity>
+        <activity android:name=".ui.A.AActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ColorActivity" />
+        <activity android:name=".ui.Planeta.PlanetaActivity" />
+        <activity android:name=".ui.RegistroActivity" />
+        <activity
+            android:name=".ui.AuthActivity"
+            android:theme="@style/Splash"/>
     </application>
 
 </manifest>
